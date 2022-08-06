@@ -4,10 +4,6 @@ resource "aws_vpc" "main" {
     Name = "main"
   }
 }
-resource "aws_s3_bucket" "b" {
+resource "aws_s3_bucket" "my_simple_bucket" {
   bucket = "vishal-test-bucket"
-
-  tags = {
-    Name        = "s3_bucket" 
   }
-}
