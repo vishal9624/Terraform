@@ -5,10 +5,9 @@ resource "aws_vpc" "main" {
   }
 }
 resource "aws_s3_bucket" "b" {
-  bucket = "my-tf-test-bucket"
+  bucket = "vishal-test-bucket"
 
   tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
+    Name        = "s3_bucket" 
   }
 }
